@@ -1,0 +1,1 @@
+# stardew-access-i18n
