@@ -27,5 +27,11 @@ You can have basic pluralization setup with just fluent but that gets complicate
 4. Now copy the `.ftl` files from the `i18n` folder of the mod's beta or release version of the mod and rename them with your language code.
 5. That's it! Now you can translate these files.
 
+You can find syntax guide for fluent [here](https://projectfluent.org/fluent/guide/).
+There's also a [playground](https://projectfluent.org/play/) where you can test things if you want to.
+You might also need to look into the custom functions added by [Project Fluent mod](https://hackmd.io/@Shockah/H1q8H-mcc/https%3A%2F%2Fhackmd.io%2F%40Shockah%2FHy8nTM7c5) and [Stardew Access](https://github.com/khanshoaib3/stardew-access/blob/c966d188ea506a70782edb5177ef6e87c685f890/stardew-access/Translation/CustomFluentFunctions.cs#L29-L91)
+
+<TODO Add the doc link for custom functions in stardew access.>
+
 Because this is a content pack, it loads just like any other mod. So once you're done translating or want to test your translations, copy or move the `[Fluent][EN] Stardew Access` over to the `Mods` folder.
 It is recommended that you also host this content pack on Nexus (if possible otherwise github or some other platform is fine) so that we can mention your translation mod on Stardew Access' mod pages.
