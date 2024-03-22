@@ -1,9 +1,9 @@
 ﻿{
-  "Name": "[Fluent][EN] Stardew Access",
-  "Author": "Your Name",
+  "Name": "[Fluent][ES] Stardew Access",
+  "Author": "Marc2p",
   "Version": "1.0.0",
-  "Description": "<description>",
-  "UniqueID": "<see the readme for an example>",
+  "Description": "Traducción al español de Stardew Access",
+  "UniqueID": "marc2p.fluent.stardewaccess.es",
   "UpdateKeys": [], // when you release the mod, see https://stardewvalleywiki.com/Modding:Modder_Guide/APIs/Update_checks
   "ContentPackFor": {
     "UniqueID": "Shockah.ProjectFluent"
