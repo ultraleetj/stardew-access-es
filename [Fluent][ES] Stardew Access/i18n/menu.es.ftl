@@ -4,27 +4,27 @@
 
 ### Common UI elements
 
-common-ui-ok_button = OK button
-common-ui-cancel_button = Cancel button
-common-ui-confirm_button = Confirm button
-common-ui-drop_item_button = Drop item button
-common-ui-trashcan_button = Trashcan
-common-ui-organize_inventory_button = Organize inventory button
-common-ui-community_center_button = Community center button
-common-ui-scroll_up_button = Scroll up button
-common-ui-scroll_down_button = Scroll down button
-common-ui-next_page_button = Next page button
-common-ui-previous_page_button = Previous page button
-common-ui-close_menu_button = Close menu button
-common-ui-back_button = Back button
-common-ui-forward_button = Forward button
+common-ui-ok_button = Aceptar botón
+common-ui-cancel_button = Cancelar botón
+common-ui-confirm_button = Confirmar botón
+common-ui-drop_item_button = Soltar objeto botón
+common-ui-trashcan_button = Papelera
+common-ui-organize_inventory_button = Organizar inventario botón
+common-ui-community_center_button = Centro comunitario botón
+common-ui-scroll_up_button = Desplazar hacia arriba botón
+common-ui-scroll_down_button = Desplazar hacia abajo botón
+common-ui-next_page_button = Página siguiente botón
+common-ui-previous_page_button = Página anterior botón
+common-ui-close_menu_button = Cerrar menú botón
+common-ui-back_button = Atrás botón
+common-ui-forward_button = Adelante botón
 common-ui-equipment_slots = {$slot_name ->
-    [hat] Hat
-    [left_ring] Left ring
-    [right_ring] Right ring
-    [boots] Boots
-    [shirt] Shirt
-    [pants] Pants
+    [hat] Sombrero
+    [left_ring] Anillo izquierdo
+    [right_ring] Anillo derecho
+    [boots] Botas
+    [shirt] Camisa
+    [pants] Pantalones
     *[other] {EMPTYSTRING()}
   } slot{$is_empty ->
     [0] : {$item_name}, {$item_description}
@@ -522,42 +522,42 @@ menu-special_orders_board-quest_completed = Quest {$name} completed! Open journa
 
 ### Title Menu
 
-menu-title-new_game_button = New game button
-menu-title-load_button = Load button
-menu-title-co_op_button = Co-op button
-menu-title-language_button = Language button
-menu-title-about_button = About button
-menu-title-mute_music_button = Mute music button
-menu-title-fullscreen_button = Fullscreen: {$is_enabled ->
-    [0] disabled
-    *[1] enabled
+menu-title-new_game_button = Nueva partida botón
+menu-title-load_button = Cargar partida botón
+menu-title-co_op_button = Modo cooperativo botón
+menu-title-language_button = Idioma botón
+menu-title-about_button = Acerca de botón
+menu-title-mute_music_button = Silenciar música botón
+menu-title-fullscreen_button = Pantalla completa: {$is_enabled ->
+    [0] desactivada
+    *[1] activada
   }
-menu-title-exit_button = Exit button
-menu-title-invite_button = Invite button
+menu-title-exit_button = Salir botón
+menu-title-invite_button = Invitar botón
 
 ### Load Game Menu
 
-menu-load_game-delete_farm_button = Delete {$name} farm
-menu-load_game-delete_farm_confirmation_text = Really delete farm?
+menu-load_game-delete_farm_button = Borrar la granja {$name}
+menu-load_game-delete_farm_confirmation_text = ¿Seguro que quieres borrar la granja?
 menu-load_game-farm_details = {$index ->
     [-1] {EMPTYSTRING()}
     *[other] {$index}
-  } {$farm_name} Farm, {$farmer_name}, {$money ->
+  } Granja {$farm_name}, {$farmer_name}, {$money ->
     [-1] {EMPTYSTRING()}
     *[other] {$money}g
-  }, {$date}, {$hours_played} hours played
+  }, {$date}, {$hours_played} horas jugadas
 
 ### Co-op Menu
 
-menu-co_op-join_lan_game_button = Join lan game
-menu-co_op-host_new_farm_button = Host new farm
-menu-co_op-refresh_button = Refresh Button
-menu-co_op-join_tab_button = Join tab {$is_selected ->
+menu-co_op-join_lan_game_button = Unirse a una partida en la red local...
+menu-co_op-host_new_farm_button = Crear nueva granja...
+menu-co_op-refresh_button = Actualizar botón
+menu-co_op-join_tab_button = Unirse pestaña {$is_selected ->
     [0] {EMPTYSTRING()}
-    *[1] selected
+    *[1] seleccionada
   }
-menu-co_op-host_tab_button = Host tab {$is_selected ->
+menu-co_op-host_tab_button = Anfitrión {$is_selected ->
     [0] {EMPTYSTRING()}
-    *[1] selected
+    *[1] seleccionada
   }
-menu-co_op-friend_hosted_farm_details = {$farm_name}, Owner: {$owner_name}, {$date}
+menu-co_op-friend_hosted_farm_details = {$farm_name}, Propietario: {$owner_name}, {$date}
