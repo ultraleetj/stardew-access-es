@@ -2,103 +2,106 @@
 
 ## Default Controls
 
-menu-character_creation-farmer_name_text_box = Farmer's name {$value ->
-    [null] text box
+menu-character_creation-farmer_name_text_box = Nombre del granjero {$value ->
+    [null] cuadro de edición
     *[other] : {$value}
   }
-menu-character_creation-farm_name_text_box = Farm's name {$value ->
-    [null] text box
+menu-character_creation-farm_name_text_box = Nombre de la granja {$value ->
+    [null] cuadro de edición
     *[other] : {$value}
   }
-menu-character_creation-favorite_thing_text_box = Favorite thing {$value ->
-    [null] text box
+menu-character_creation-favorite_thing_text_box = Cosa favorita {$value ->
+    [null] cuadro de edición
     *[other] : {$value}
   }
-menu-character_creation-previous_pet_button = Previous pet button
-menu-character_creation-next_pet_button = Next pet button
-menu-character_creation-current_pet-prefix = Current pet: {$content}
-menu-character_creation-random_skin_button = Random skin button
-menu-character_creation-gender_button = {$is_selected ->
+menu-character_creation-previous_pet_button = Mascota anterior botón
+menu-character_creation-next_pet_button = Mascota siguiente botón
+menu-character_creation-current_pet-prefix = Mascota actual: {$content}
+menu-character_creation-random_skin_button = Skin aleatorio botón
+menu-character_creation-gender_button = Género: {$is_male ->
+    [0] Femenino
+    *[1] Masculino
+  }
+  botón
+  {$is_selected ->
     [0] {EMPTYSTRING()}
-    *[1] Selected
-  } Gender: {$is_male ->
-    [0] Female
-    *[1] Male
-  } button
+    *[1] Seleccionado
+  }
 menu-character_creation-farm_type_buttons = {$is_selected ->
     [0] {EMPTYSTRING()}
-    *[1] Selected
+    *[1] Seleccionada
   } {$value}
-menu-character_creation-next_farm_type_page_button = Next farm type page button
-menu-character_creation-previous_farm_type_page_button = Previous farm type page button
+menu-character_creation-next_farm_type_page_button = Página siguiente de tipo de granja botón
+menu-character_creation-previous_farm_type_page_button = Página anterior de tipo de granja botón
 menu-character_creation-farm_type_locked_info = Reach level 10 {$farm_name} to unlock.
 menu-character_creation-skip_intro_button = {$is_enabled ->
-    [0] Disabled
-    *[1] Enabled
-  } skip intro button
-menu-character_creation-advanced_options_button = Advanced options button
-menu-character_creation-character_design_controls_usage_info = Press left control + space to toggle character appearance controls
-menu-character_creation-character_design_controls_toggle_info = Character design controls {$is_enabled ->
-    [0] hidden
-    *[1] shown
+    [0] Desactivado
+    *[1] Activado
+  } Saltar introducción botón
+menu-character_creation-advanced_options_button = Opciones avanzadas botón
+menu-character_creation-character_design_controls_usage_info = Presiona control izquierdo + espacio para mostrar u ocultar los controles de apariencia del personaje
+menu-character_creation-character_design_controls_toggle_info = Controles de apariencia del personaje {$is_enabled ->
+    [0] ocultos
+    *[1] visibles
   }
 
 ## Co-op controls
 
-menu-character_creation-decrease_starting_cabins_button = Decrease starting cabins button
-menu-character_creation-starting_cabins_label = Starting cabins: {$value}
-menu-character_creation-increase_starting_cabins_button = Increase starting cabins button
-menu-character_creation-cabin_layout_nearby_button = Cabin layout to nearby button
-menu-character_creation-cabin_layout_separate_button = Cabin layout to separate button
-menu-character_creation-increase_profit_margin_button = Increase profit margin button
+menu-character_creation-decrease_starting_cabins_button = Disminuir la cantidad de cabañas iniciales botón
+menu-character_creation-starting_cabins_label = Cabañas al comienzo: {$value}
+menu-character_creation-increase_starting_cabins_button = Aumentar la cantidad de cabañas iniciales botón
+menu-character_creation-cabin_layout_nearby_button = Diseño de cabañas cercanas botón
+menu-character_creation-cabin_layout_separate_button = Diseño de cabañas separadas botón
+menu-character_creation-increase_profit_margin_button = Aumentar margen de beneficio botón
 # The 'value' will be 'normal' instead of `1`. So translate that here as shown in example below.
 # Example: {$value ->
 #     [normal] <normal equivalent to your language here>
 #     *[other] {$value}
 #   }
-menu-character_creation-profit_margin_label = Profit margin: {$value}
-menu-character_creation-decrease_profit_margin_button = Decrease profit margin button
-menu-character_creation-money_style_separate_wallets_button = Money style to {$separate_wallets ->
-[0] shared
-*[1] separate
-  } wallets button
+menu-character_creation-profit_margin_label = Margen de beneficio: {$value}
+menu-character_creation-decrease_profit_margin_button = Disminuir margen de beneficio botón
+menu-character_creation-money_style_separate_wallets_button = Dinero {$separate_wallets ->
+[0] compartido entre los granjeros
+*[1] independiente para cada granjero
+  } botón
+
 
 ## Character design controls
 
-menu-character_creation-rotate_left_button = Rotate left button
-menu-character_creation-rotate_right_button = Rotate right button
-menu-character_creation-eye_color_hue_slider = Eye color hue slider
-menu-character_creation-eye_color_saturation_slider = Eye color saturation slider
-menu-character_creation-eye_color_value_slider = Eye color value slider
-menu-character_creation-hair_color_hue_slider = Hair color hue slider
-menu-character_creation-hair_color_saturation_slider = Hair color saturation slider
-menu-character_creation-hair_color_value_slider = Hair color value slider
-menu-character_creation-pants_color_hue_slider = Pants color hue slider
-menu-character_creation-pants_color_saturation_slider = pants color saturation slider
-menu-character_creation-pants_color_value_slider = Pants color value slider
+menu-character_creation-rotate_left_button = Girar a la izquierda botón
+menu-character_creation-rotate_right_button = Girar a la derecha botón
+menu-character_creation-eye_color_hue_slider = tono del color de los ojos Deslizador
+menu-character_creation-eye_color_saturation_slider = saturación del color de los ojos Deslizador
+menu-character_creation-eye_color_value_slider = valor del color de los ojos Deslizador
+menu-character_creation-hair_color_hue_slider = tono del color del cabello Deslizador
+menu-character_creation-hair_color_saturation_slider = saturación del color del cabello Deslizador
+menu-character_creation-hair_color_value_slider = valor del color del cabello Deslizador
+menu-character_creation-pants_color_hue_slider = tono del color de los pantalones Deslizador
+menu-character_creation-pants_color_saturation_slider = saturación del color de los pantalones Deslizador
+menu-character_creation-pants_color_value_slider = valor del color de los pantalones Deslizador
 
-menu-character_creation-previous_button_with_label = Previous {$label} button
-menu-character_creation-next_button_with_label = Next {$label} button
-menu-character_creation-label-skin = Skin tone
-menu-character_creation-label-hair = Hair style
-menu-character_creation-label-shirt = Shirt
-menu-character_creation-label-pants_style = Pants style
-menu-character_creation-label-acc = Accessory
+menu-character_creation-previous_button_with_label = {$label} anterior botón
+menu-character_creation-next_button_with_label = {$label} siguiente botón
+menu-character_creation-label-skin = Tono de piel
+menu-character_creation-label-hair = Estilo de cabello
+menu-character_creation-label-shirt = Camisa
+menu-character_creation-label-pants_style = Estilo de pantalones
+menu-character_creation-label-acc = Accesorio
 
-menu-character_creation-label-eye_color = Eye color
-menu-character_creation-label-hair_color = Hair color
-menu-character_creation-label-pants_color = Pants color
-menu-character_creation-label-hue = Hue
-menu-character_creation-label-saturation = Saturation
-menu-character_creation-label-value = Value
+menu-character_creation-label-eye_color = Color de ojos
+menu-character_creation-label-hair_color = Color de cabello
+menu-character_creation-label-pants_color = Color de pantalones
+menu-character_creation-label-hue = Tono
+menu-character_creation-label-saturation = Saturación
+menu-character_creation-label-value = Valor
 
 ### Descriptions
 
 menu-character_creation-description-cat = {$less_info ->
     [0] {$breed ->
-      [1] Orange cat
-      [2] Gray Tabby cat with white belly
-      [3] Yellow cat with purple collar
+      [1] Gato naranja
+      [2] Gato gris atigrado con vientre blanco
+      [3] Gato amarillo con collar morado
       *[other] {EMPTYSTRING()}
     }
     *[1] Cat {$breed}
@@ -106,9 +109,9 @@ menu-character_creation-description-cat = {$less_info ->
 
 menu-character_creation-description-dog = {$less_info ->
     [0] {$breed ->
-      [1] Golden-brown Hound with blue collar
-      [2] Brown Shepherd
-      [3] Tan body, brown eared, long furred terrier
+      [1] Sabueso marrón dorado con collar azul
+      [2] Perro Pastor marrón
+      [3] Terrier de pelo largo y oscuro y orejas marrones
       *[other] {EMPTYSTRING()}
     }
     *[1] Dog {$breed}
