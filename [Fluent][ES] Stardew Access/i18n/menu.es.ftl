@@ -288,7 +288,7 @@ menu-shop-recipe_ingredients_info = Ingredientes: {$ingredients_list}
 
 ### Tailoring Menu
 
-	menu-tailoring-start_tailoring_button = Comenzar sastrería botón
+menu-tailoring-start_tailoring_button = Comenzar sastrería botón
 menu-tailoring-cloth_input_slot = {$is_empty ->
     [0] Ranura para la prenda: {$item_name}
     *[1] Pon aquí la prenda o ropa teñible
