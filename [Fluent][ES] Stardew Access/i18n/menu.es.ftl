@@ -18,7 +18,7 @@ common-ui-previous_page_button = Página anterior botón
 common-ui-close_menu_button = Cerrar menú botón
 common-ui-back_button = Atrás botón
 common-ui-forward_button = Adelante botón
-common-ui-equipment_slots = {$slot_name ->
+common-ui-equipment_slots = Ranuras de equipo{$slot_name ->
     [hat] Sombrero
     [left_ring] Anillo izquierdo
     [right_ring] Anillo derecho
@@ -33,128 +33,128 @@ common-ui-equipment_slots = {$slot_name ->
 
 ### Options Element
 
-options_element-button_info = {$label} button
-options_element-text_box_info = {$label} text box{$value ->
+options_element-button_info = botón_información {$label} button
+options_element-text_box_info = {$label} cuadro de edición{$value ->
     [null] {EMPTYSTRING()}
     *[other] : {$value}
   }
 options_element-checkbox_info = {$is_checked ->
-    [0] Disabled
-    *[1] Enabled
+    [0] Desactivado
+    *[1] Activado
   } {$label} checkbox
-options_element-dropdown_info = {$label} dropdown, option {$selected_option} selected
-options_element-slider_info = {$slider_value}% {$label} slider
-options_element-plus_minus_button_info = {$selected_option} selected of {$label}
-options_element-input_listener_info = {$label} is bound to {$buttons_list}. Left click to change.
+options_element-dropdown_info = {$label} desplegable, opción {$selected_option} selected
+options_element-slider_info = {$slider_value}% {$label} deslizador
+options_element-plus_minus_button_info = {$selected_option} seleccionado de {$label}
+options_element-input_listener_info = {$label} está vinculado a {$buttons_list}. Left click to change.
 
 ## Custom Menus
 
 ### Tile Info Menu
 
-menu-tile_info-mark_tile = Mark this tile
-menu-tile_info-select_marking_index = Select index
-menu-tile_info-add_to_user_tiles_data = Add this tile to user tiles data
-menu-tile_info-detailed_tile_info = Speak detailed tile info
-menu-tile_info-data_exists = Tile data already exist, do you want to
-menu-tile_info-edit_existing_data = Edit data?
-menu-tile_info-delete_existing_data = Delete data?
+menu-tile_info-mark_tile = Marcar esta casilla
+menu-tile_info-select_marking_index = Seleccionar valor
+menu-tile_info-add_to_user_tiles_data = Añadir esta casilla a la información de casillas del usuario
+menu-tile_info-detailed_tile_info = Verbalizar información detallada de la casilla
+menu-tile_info-data_exists = Ya existe información para esta casilla, deseas...
+menu-tile_info-edit_existing_data = Editarla?
+menu-tile_info-delete_existing_data = Borrarla?
 
 ### Tile Data Entry Menu
 
-menu-tile_data_entry-none = None
-menu-tile_data_entry-heading_label = Tile {$tile_x}x {$tile_y}y in {$location_name}
-menu-tile_data_entry-tile_name_text_box_label = Tile name
-menu-tile_data_entry-tile_name_empty = Tile name cannot be empty or null
-menu-tile_data_entry-categories_drop_down_label = Category
-menu-tile_data_entry-mod_dependency_drop_down_label = Mod dependency
-menu-tile_data_entry-event_check_box_label = Check for current {$is_festival ->
+menu-tile_data_entry-none = Ninguna
+menu-tile_data_entry-heading_label = Casilla {$tile_x}x {$tile_y}y en {$location_name}
+menu-tile_data_entry-tile_name_text_box_label = Nombre de la casilla
+menu-tile_data_entry-tile_name_empty = El nombre de la casilla no puede ser un valor nulo
+menu-tile_data_entry-categories_drop_down_label = Categoría
+menu-tile_data_entry-mod_dependency_drop_down_label = Dependencia del mod
+menu-tile_data_entry-event_check_box_label = Comprobar si actual es  {$is_festival ->
     [0] {$is_wedding ->
-        [0] event,
-        *[1] wedding,
+        [0] evento,
+        *[1] casamiento,
       }
     *[1] festival: {$festival_name},
   } id: {$event_id}
-menu-tile_data_entry-farm_type_check_box_label = Check for current farm type: {$farm_type}
-menu-tile_data_entry-farm_house_upgrade_level_drop_down_label = Check for farm house upgrade level
-menu-tile_data_entry-quest_drop_down_label = Check if player has quest
-menu-tile_data_entry-quest_drop_down-manual_entry_option = Enter quest id manually
-menu-tile_data_entry-manual_quest_id_text_box_label = Quest id
-menu-tile_data_entry-joja_member_checkbox_label = Check if player is Joja member
+menu-tile_data_entry-farm_type_check_box_label = Verifique el tipo de granja actual: {$farm_type}
+menu-tile_data_entry-farm_house_upgrade_level_drop_down_label = Verifique el nivel actual de mejora de la casa
+menu-tile_data_entry-quest_drop_down_label = Comprobar si el jugador posee algún quest
+menu-tile_data_entry-quest_drop_down-manual_entry_option = Introduzca manualmente el id del quest
+menu-tile_data_entry-manual_quest_id_text_box_label = Id del quest
+menu-tile_data_entry-joja_member_checkbox_label = Revisar si el jugador es un miembro de la corporación Joja
 
 ## Bundle Menus
 
 ### Common
 
-menu-bundle-completed-prefix = Completed {$content}
+menu-bundle-completed-prefix = Completado {$content}
 
 ### JoJa CD Menu
 
-menu-joja_cd-project_info = {$name}, Cost: {$price}g, Description: {$description}
+menu-joja_cd-project_info = {$name}, Costo: {$price}g, Descripción: {$description}
 menu-joja_cd-project_name = {$project_index ->
     [0] Bus
-    [1] Minecarts
-    [2] Bridge
-    [3] Greenhouse
-    [4] Panning
-    *[other] Unknown
+    [1] Carros mineros
+    [2] Puente
+    [3] Invernadero
+    [4] Bateo
+    *[other] Desconocido
   } Project
 
 ### Junimo Note Menu
 
-menu-junimo_note-scrambled_text = Scrambled text
-menu-junimo_note-current_area_info-prefix = Area: {$area_name}, {$completion_reward}, 
-menu-junimo_note-bundle_open_button = {$bundle_name} bundle
-menu-junimo_note-input_slot = Input Slot {$index}
-menu-junimo_note-collect_rewards = Collect rewards
-menu-junimo_note-next_area_button = Next area button
-menu-junimo_note-previous_area_button = Previous area button
-menu-junimo_note-back_button = Back button
-menu-junimo_note-purchase_button = Purchase button
+menu-junimo_note-scrambled_text = Texto codificado
+menu-junimo_note-current_area_info-prefix = área: {$area_name}, {$completion_reward}, 
+menu-junimo_note-bundle_open_button = {$bundle_name} Manojo
+menu-junimo_note-input_slot = Ranura De Entrada {$index}
+menu-junimo_note-collect_rewards = Recoger recompensas
+menu-junimo_note-next_area_button = Siguiente área botón
+menu-junimo_note-previous_area_button = área anterior botón
+menu-junimo_note-back_button = Botón atrás
+menu-junimo_note-purchase_button = Comprar botón
 
 ## Donation Menus
 
-menu-donation_common-donatable_item_in_inventory-prefix = Donatable {$content}
+menu-donation_common-donatable_item_in_inventory-prefix = Puede ser donado {$content}
 
 ### Field Office Menu
 
 # TODO maybe make a range function
 menu-field_office-incomplete_slot_names = {$slot_index ->
    [0] Center skeleton
-   [1] Center skeleton
-   [2] Center skeleton
-   [3] Center skeleton
-   [4] Center skeleton
-   [5] Center skeleton
-   [6] Snake
-   [7] Snake
-   [8] Snake
-   [9] Bat
-   [10] Frog
+   [1] Esqueleto central
+   [2] Esqueleto central
+   [3] Esqueleto central
+   [4] Esqueleto central
+   [5] Esqueleto central
+   [6] Serpiente
+   [7] Serpiente
+   [8] Serpiente
+   [9] Murciélago
+   [10] Rana
    *[other] Donation
   } slot
-menu-field_office-completed_slot_info = Slot {$slot_index} finished: {$item_name_in_slot}
+menu-field_office-completed_slot_info = Ranura {$slot_index} finalizada: {$item_name_in_slot}
 
 ### Museum Menu
 
-menu-museum-slot_info = Slot {$x_position}x {$y_position}y
+menu-museum-slot_info = Ranura {$x_position}x {$y_position}y
 
 ## Game Menus
 
-menu-game_menu-tab_names = {$tab_name} Tab {$is_active ->
+menu-game_menu-tab_names = {$tab_name} Pestaña {$is_active ->
     [0] {EMPTYSTRING()}
-    *[1] Active
+    *[1] Activa
   }
 
 ### Inventory Page
 
 menu-inventory_page-money_info_key = {$farm_name}, {$current_funds}, {$total_earnings}{SIGNOFNUMBER($festival_score) ->
-    [positive] , Festival score: {$festival_score}
+    [positive] , Puntuación en el  festival:: {$festival_score}
     *[other] {EMPTYSTRING()}
   }{SIGNOFNUMBER($golden_walnut_count) ->
-    [positive] , Golden walnut: {$golden_walnut_count}
+    [positive] , Nuez dorada: {$golden_walnut_count}
     *[other] {EMPTYSTRING()}
   }{SIGNOFNUMBER($qi_gem_count) ->
-    [positive] , Qi gems: {$qi_gem_count}
+    [positive] , Qi gemas: {$qi_gem_count}
     *[other] {EMPTYSTRING()}
   }{SIGNOFNUMBER($qi_club_coins) ->
     [positive] , Qi club coins: {$qi_club_coins}
@@ -164,17 +164,17 @@ menu-inventory_page-money_info_key = {$farm_name}, {$current_funds}, {$total_ear
 ### Social Page
 
 menu-social_page-npc_info = {$name}{$has_talked ->
-    [0] , not talked yet
+    [0] , no le hablaste aún
     *[1] {EMPTYSTRING()}
-    [2] , not met yet
+    [2] , sin conocer
   }{$relationship_status ->
     [null] {EMPTYSTRING()}
     *[other] , {$relationship_status}
   }, {$heart_level} {$heart_level ->
-    [1] heart
+    [1] corazón
     *[other] hearts
   }, {$gifts_this_week} {$gifts_this_week ->
-    [1] gift
+    [1] regalo
     *[other] gifts
   } given this week.
 
@@ -184,118 +184,118 @@ menu-social_page-player_info = {$name}{$relationship_status ->
   }
 
 ### Collections Page
-menu-collections_page-tabs = {$tab_name} tab {$is_selected ->
+menu-collections_page-tabs = {$tab_name} pestaña {$is_selected ->
     [0] {EMPTYSTRING()}
-    *[1] selected
+    *[1] seleccionada
   }
-menu-collections_page-unachieved = Unachieved
-menu-collections_page-uncaught = Uncaught
-menu-collections_page-uncooked = Uncooked
-menu-collections_page-unfound = Unfound
-menu-collections_page-unshipped = Unshipped
+menu-collections_page-unachieved = Sin desbloquear
+menu-collections_page-uncaught = Por recoger
+menu-collections_page-uncooked = Crudo
+menu-collections_page-unfound = Aún no encontrada
+menu-collections_page-unshipped = Sin enviar
 
 ### Crafting Page
 
 menu-crafting_page-recipe_info = {$produce_count} {$name}, {$is_craftable ->
-    [0] not craftable
-    *[1] craftable
-  }, Ingredients: {$ingredients}, Description: {$description}, {$buffs}
-menu-crafting_page-unknown_recipe = Unknown recipe
-menu-crafting_page-previous_recipe_list_button = Previous recipe list button
-menu-crafting_page-next_recipe_list_button = Next recipe list button
+    [0] no es fabricable
+    *[1] fabricable
+  }, Ingredientes: {$ingredients}, Descripción: {$description}, {$buffs}
+menu-crafting_page-unknown_recipe = Receta desconocida
+menu-crafting_page-previous_recipe_list_button = Receta anterior en lista botón
+menu-crafting_page-next_recipe_list_button = Receta siguiente en lista botón
 
 ### Exit Page
 
-menu-exit_page-exit_to_title_button = Exit to title button
-menu-exit_page-exit_to_desktop_button = Exit to desktop button
+menu-exit_page-exit_to_title_button = Salir al menú principal Botón
+menu-exit_page-exit_to_desktop_button = Salir al escritorio botón
 
 ### Skills Page
 
 menu-skills_page-player_info = {$name}, {$title}{$golden_walnut_count ->
     [0] {EMPTYSTRING()}
-    [1] , 1 Golden Walnut
+    [1] , 1 Nuez Dorada
     *[other] , {$golden_walnut_count} Golden Walnuts
   }{$qi_gem_count ->
     [0] {EMPTYSTRING()}
-    [1] , 1 Qi gem
+    [1] , 1 Qi gema
     *[other] , {$qi_gem_count} Qi gems
   }
-menu-skills_page-skill_info = {$name} at level {$level},
+menu-skills_page-skill_info = {$name} en nivel {$level},
   {$buffs}
 
 ## Menus With Inventory
 
 ### Forge Menu
 
-menu-forge-start_forging_button = Start forging button
-menu-forge-unforge_button = Unforge button
+menu-forge-start_forging_button = Comenzar a forjar botón
+menu-forge-unforge_button = Revertir forjado botón
 menu-forge-weapon_input_slot = {$is_empty ->
-    [0] Weapon slot: {$item_name}
-    *[1] Place weapon, tool or ring here
+    [0] Ranura para el arma: {$item_name}
+    *[1] Coloca el arma, herramienta o anillo aquí
   }
 menu-forge-gemstone_input_slot = {$is_empty ->
-    [0] Gemstone slot: {$item_name}
-    *[1] Place gemstone or ring here
+    [0] Ranura para la gema slot: {$item_name}
+    *[1] Coloca la gema o el anillo aquí
   }
 
 ### Geode Menu
 
-menu-geode-geode_input_slot = Place geode here
-menu-geode-received_treasure_info = Received {$treasure_name}
+menu-geode-geode_input_slot = Deposita aquí la geoda
+menu-geode-received_treasure_info = Recibido {$treasure_name}
 
 ### Item Grab Menu
 
-menu-item_grab-last_shipped_info = Last shipped: {$shipped_item_name}
-menu-item_grab-add_to_existing_stack_button = Add to existing stacks button
-menu-item_grab-special_button = Special button
-menu-item_grab-color_picker_button = Color picker: {$is_enabled ->
-    [0] Disabled
-    *[1] Enabled
+menu-item_grab-last_shipped_info = último envío: {$shipped_item_name}
+menu-item_grab-add_to_existing_stack_button = Agregarlo a las pilas existentes Botón
+menu-item_grab-special_button = Especial botón
+menu-item_grab-color_picker_button = Selector de color: {$is_enabled ->
+    [0] Desactivado
+    *[1] Activado
   }
 menu-item_grab-chest_colors =
   {$index ->
-   [0] Chest color: Brown (default)
-   [1] Blue
-   [2] Light Blue
-   [3] Teal
-   [4] Aqua
-   [5] Green
-   [6] Lime Green
-   [7] Yellow
-   [8] Light Orange
-   [9] Orange
-   [10] Red
-   [11] Dark Red
-   [12] Light Pink
-   [13] Pink
+   [0] Color del cofre: Marrón (por defecto)
+   [1] Azul
+   [2] Azul claro
+   [3] Verde Azulado
+   [4] Agua
+   [5] Verde
+   [6] Verde Lima
+   [7] Amarillo
+   [8] Naranja Claro
+   [9] Naranja
+   [10] Rojo
+   [11] Rojo Oscuro
+   [12] Rosa Suave
+   [13] Rosa
    [14] Magenta
-   [15] Purple
-   [16] Dark Purple
-   [17] Dark Grey
-   [18] Medium Grey
-   [19] Light Grey
-   [20] White
-   *[other] Unknown
+   [15] Púrpura
+   [16] Púrpura oscuro
+   [17] Gris Oscuro
+   [18] Gris
+   [19] Gris Suave
+   [20] Blanco
+   *[other] Sin Color Definido
   } {$is_selected ->
   [0] {EMPTYSTRING()}
-  *[1] selected
+  *[1] seleccionado
   }
 
 ### Shop menu
 
-menu-shop-buy_price_info = Buy price: {$price}g
-menu-shop-recipe_ingredients_info = Ingredients: {$ingredients_list}
+menu-shop-buy_price_info = Precio de compra: {$price}g
+menu-shop-recipe_ingredients_info = Ingredientes: {$ingredients_list}
 
 ### Tailoring Menu
 
-menu-tailoring-start_tailoring_button = Start tailoring button
+	menu-tailoring-start_tailoring_button = Comenzar sastrería botón
 menu-tailoring-cloth_input_slot = {$is_empty ->
-    [0] Cloth slot: {$item_name}
-    *[1] Place cloth or dyeable clothing here
+    [0] Ranura para la prenda: {$item_name}
+    *[1] Pon aquí la prenda o ropa teñible
   }
 menu-tailoring-spool_slot = {$is_empty ->
-    [0] Spool: {$item_name}
-    *[1] Place materials here
+    [0] Carrete: {$item_name}
+    *[1] Pon los materiales aquí
   }
 
 ## Misc Patches
@@ -304,7 +304,7 @@ menu-tailoring-spool_slot = {$is_empty ->
 
 menu-dialogue_box-npc_dialogue_format = {$is_appearing_first_time ->
     [0] {EMPTYSTRING()}
-    *[1] {$npc_name} said,
+    *[1] {$npc_name} dijo,
   } {$dialogue}
 
 ## Other Menu Patches
@@ -314,49 +314,49 @@ menu-dialogue_box-npc_dialogue_format = {$is_appearing_first_time ->
 menu-animal_query-animal_info =
   {$name}, {$is_baby ->
     [0] {$type}
-    *[1] Baby {$type}
+    *[1] Cría {$type}
   }, {$heart_count ->
-    [1] 1 heart
-    *[other] {$heart_count} hearts
+    [1] 1 corazón
+    *[other] {$heart_count} corazones
   }, {$age ->
-    [1] 1 month
-    *[other] {$age} months
-  } old, {$parent_name ->
+    [1] 1 mes
+    *[other] {$age} meses
+  } antiguo, {$parent_name ->
     [null] {EMPTYSTRING()}
-    *[other] Parent: {$parent_name}.
+    *[other] Dueño: {$parent_name}.
   }, {$mood}
-menu-animal_query-confirm_selling_button = Confirm selling animal button
-menu-animal_query-cancel_selling_button = Cancel selling animal button
-menu-animal_query-selling_button = Sell for {$price}g button
-menu-animal_query-move_home_button = Change home building button
-menu-animal_query-text_box = Animal name text box
+menu-animal_query-confirm_selling_button = Confirmar venta del animal botón
+menu-animal_query-cancel_selling_button = Cancelar la venta del animal botón
+menu-animal_query-selling_button = Vender al precio de  {$price}g botón
+menu-animal_query-move_home_button = Mudarlo de edificio botón
+menu-animal_query-text_box = Nombre del animal cuadro de edición
 menu-animal_query-allow_reproduction_button =
   {$checkbox_value ->
-    [0] Disabled
-    *[1] Enabled
+    [0] Desactivada
+    *[1] Activada
   } allow pregnancy button
 
 ### Carpenter Menu
 
-menu-carpenter-blueprint_info = {$name}, Price: {$price}g, Ingredients: {$ingredients_list}, Dimensions: {$width} width and {$height} height, Description: {$description}
-menu-carpenter-previous_blueprint_button = Previous blueprint
-menu-carpenter-next_blueprint_button = Next blueprint
-menu-carpenter-move_building_button = Move building
-menu-carpenter-paint_building_button = Paint building
-menu-carpenter-demolish_building_button = Demolish building{$can_demolish ->
-    [0] , cannot demolish building
+menu-carpenter-blueprint_info = {$name}, Precio: {$price}g, Ingredientes: {$ingredients_list}, Dimensiones: {$width} ancho and {$height} alto, Descripción: {$description}
+menu-carpenter-previous_blueprint_button = Plano anterior
+menu-carpenter-next_blueprint_button = Plano siguiente
+menu-carpenter-move_building_button = Desplazar edificio
+menu-carpenter-paint_building_button = Pintar edificio
+menu-carpenter-demolish_building_button = Demoler edificio{$can_demolish ->
+    [0] , no puedes demoler este edificio
     *[1] {EMPTYSTRING()}
   }
-menu-carpenter-construct_building_button = Construct building{$can_construct ->
-    [0] , cannot construct building
+menu-carpenter-construct_building_button = Construir edificio{$can_construct ->
+    [0] , no puedes construir este edificio
     *[1] {EMPTYSTRING()}
   }
 
 ### Choose From List Menu
 
-menu-choose_from_list-ok_button = Select {$option} button
-menu-choose_from_list-previous_button = Previous option: {$option} button
-menu-choose_from_list-next_button = Next option: {$option} button
+menu-choose_from_list-ok_button = Selecciona {$option} botón
+menu-choose_from_list-previous_button = Opción anterior: {$option} botón
+menu-choose_from_list-next_button = Siguiente opción: {$option} botón
 
 ### Confirmation Dialogue Menu
 
@@ -364,94 +364,94 @@ menu-choose_from_list-next_button = Next option: {$option} button
 # menu-confirmation_dialogue-ok_button = {$dialogue_message}
 #   {I18N("common-ui-ok_button", mod:"shoaib.stardewaccess")}
 menu-confirmation_dialogue-ok_button = {$dialogue_message}
-  Ok button
+  Ok botón
 menu-confirmation_dialogue-cancel_button = {$dialogue_message}
-  Cancel button
+  Cancelar Botón
 menu-confirmation_dialogue-copy_button = {$dialogue_message}
-  Copy to clipboard button
+  Copiar al portapapeles botón
 
 ### Item List Menu
 
 menu-item_list-ok_button = {$title}
   {$item_list}
-  Page {$current_page} of {$total_pages}
-  Ok button
+  Página {$current_page} de {$total_pages}
+  Ok botón
 
 ### Letter Viewer Menu
 
 menu-letter_viewer-letter_message = {$message_content}{$is_money_included ->
     [0] {EMPTYSTRING()}
     *[1] 
-      Got {$received_money}g
+      Obtuviste {$received_money}g
   }{$learned_any_recipe ->
     [0] {EMPTYSTRING()}
     *[1] 
-      Learned {$learned_recipe} recipe
+      Aprendiste {$learned_recipe} receta
   }{$is_quest ->
     [0] {EMPTYSTRING()}
     *[1] 
-      Left click to accept quest
+      Click izquierdo para aceptar el quest
   }
-menu-letter_viewer-pagination_text-prefix = Page {$current_page} of {$total_pages}
+menu-letter_viewer-pagination_text-prefix = Página {$current_page} de {$total_pages}
   {$content}
-menu-letter_viewer-grabbable_item_text = Left click to collect {$name}
+menu-letter_viewer-grabbable_item_text = Click izquierdo para recolectar {$name}
 menu-letter_viewer-image_note = {$note_id ->
-    [11] Image of a young Marnie holding hands with toddler Jas. They are surrounded by farm animals on the ranch.
-    [16] A treasure map depicting a large boulder NorthWest of the railroad tracks. A red X is placed to the right of the boulder.
-    [17] A treasure map depicting the river north of Joja Mart with a Red X featured in the North Easternmost Corner
-    [18] A treasure map depicting a bench in the Southeast corner of the Calico desert, featuring a red X to the southwest.
-    [19] A depiction of 1 Willow Lane with a series of arrows. A square marks the space in front of the front door. The sequence reads as left, up, right, up, right, down, left, down, left, down, check mark.
-    [20] a depiction of town square with a series of arrows. The depiction notes an area in the very center of the square. The sequence is as follows, right, down, right, up, right, up, right, down, left, up, left, up, right, up, left, up, left, check mark.
-    [21] A depiction of the large bush to the northwest of the bridge to the beach, at night. A clock displays the time 12:40.
-    *[other] Undescribed image {$note_id}
+    [11] Imagen de una joven Marnie cogida de la mano del niño Jas. Están rodeados de animales de granja en un rancho. .
+    [16] Un mapa de tesoro que señala una gran roca al noroeste del ferrocarril. Una x de color rojo se encuentra ubicada en  el lado derecho de la piedra.
+    [17] Un mapa de tesoro señalando el río al norte del mercado joja con una gran X roja  dibujada en la esquina  más al noreste
+    [18] Un mapa de tesoro señalando  un banco en la esquina sureste del desertio Calico, hay una X de color rojo hacia el suroeste.
+    [19] Una representación de  Willow Lane con una serie de flechas. Un cuadrado marca el espacio frente a la puerta de entrada. La secuencia puede leerse como: izquierda, arriba, derecha, arriba, derecha, abajo, izquierda, abajo, izquierda, abajo, verificar marca.
+    [20] una representación  de la plaza del pueblo con una serie de flechas. Se encuentra delimitada un área en el centro del cuadrado. La secuencia es la siguiente, derecha, abajo, derecha, arriba, derecha, arriba, derecha, abajo, izquierda, arriba, izquierda, arriba, derecha, arriba, izquierda, arriba, izquierda, verificar.
+    [21] Una representación del gran arbusto al noroeste del puente hacia la playa, parece ser de noche. Un reloj señala la hora: 12:40.
+    *[other] Imagen sin descripción {$note_id}
   }
 
 ### Level Up Menu
 
-menu-level_up-profession_chooser_heading = {$title}. Select a new profession.
-menu-level_up-profession_chooser_button = Selected: {$profession_description_list}
-  Left click to choose.
-menu-level_up-ok_button = {$title}, {$extra_info}, Learned recipes: {$learned_recipes}, Left click to close.
+menu-level_up-profession_chooser_heading = {$title}. Selecciona una nueva clase.
+menu-level_up-profession_chooser_button = Seleccionada: {$profession_description_list}
+  Click izquierdo para elegir.
+menu-level_up-ok_button = {$title}, {$extra_info}, Recetas aprendidas: {$learned_recipes}, Click izquierdo para cerrar.
 
 ### Naming Menu
 
-menu-naming-done_naming_button = Done button
-menu-naming-random_button = Random button
+menu-naming-done_naming_button = Hecho botón
+menu-naming-random_button = Aleatorio botón
 
 
 ### Number Selection Menu
 
-menu-number_selection-button-left_button = Decrease value button
-menu-number_selection-button-right_button = Increase value button
+menu-number_selection-button-left_button = Disminuir valor botón
+menu-number_selection-button-right_button = Incrementar valor botón
 menu-number_selection-value_and_price_info = {$value} {$price ->
     [0] {EMPTYSTRING()}
-    *[other] Price: {$price}
+    *[other] Precio: {$price}
   }
 
 ### Pond Query Menu
 
-menu-pond_query-change_netting_button = Change netting button
-menu-pond_query-empty_pond_button = Empty pond button
-menu-pond_query-pond_info = {$pond_name}, {$population_info}, {$required_item_info}, Status: {$status}
+menu-pond_query-change_netting_button = Cambiar red botón
+menu-pond_query-empty_pond_button = Estanque EMPTYSTRING botón
+menu-pond_query-pond_info = {$pond_name}, {$population_info}, {$required_item_info}, Estado: {$status}
 
 ### Purchase Animal Menu
 
-menu-purchase_animal-animal_info = {$name}, Price: {$price}g, Description: {$description}
-menu-purchase_animal-first_time_in_menu_info = Enter the name of animal in the name text box.
-menu-purchase_animal-random_name_button = Random name button
-menu-purchase_animal-animal_name_text_box = Name text box{$value ->
+menu-purchase_animal-animal_info = {$name}, Precio: {$price}g, Descripción: {$description}
+menu-purchase_animal-first_time_in_menu_info = Ingresa el nombre del animal en el cuadro de edición de nombre.
+menu-purchase_animal-random_name_button = Nombre Aleatorio botón
+menu-purchase_animal-animal_name_text_box = Cuadro de edición de nombre{$value ->
     [null] {EMPTYSTRING()}
-    *[other] , Value: {$value}
+    *[other] , Valor: {$value}
   }
 
 ### Title Text Input Menu
 
-menu-title_text_input-paste_button = Paste button
+menu-title_text_input-paste_button = Pegar botón
 
 ### Shipping Menu
 
-menu-shipping-total_money_received_info = Received {$money}g in total. Left click to save.
-menu-shipping-money_received_from_category_info = {$money}g received from {$category_name}.
+menu-shipping-total_money_received_info = Recibido {$money}g en total. Click izquierdo para almacenar.
+menu-shipping-money_received_from_category_info = {$money}g recibido de la categoría {$category_name}.
 
 ## Quest Patches
 
@@ -459,64 +459,64 @@ menu-shipping-money_received_from_category_info = {$money}g received from {$cate
 
 menu-billboard-calendar-day_info = {$is_current ->
     [0] {EMPTYSTRING()}
-    *[1] Current
+    *[1] Actual
   } Day {$day ->
-    [1] {$day} of {$season} year {$year}
+    [1] {$day} de {$season} año {$year}
     *[other] {$day}
   }{$extra_info ->
     [null] {EMPTYSTRING()}
     *[other] , {$extra_info}
   }
 menu-billboard-daily_quest-accept_quest-suffix =
-  Left click to accept quest.
+  Click izquierdo para aceptar el quest.
 
 ### Quest Log Menu (Journal Menu)
 
-menu-quest_log-cancel_quest_button = Cancel quest button
-menu-quest_log-reward_button = Collect reward button
+menu-quest_log-cancel_quest_button = Cancelar quest botón
+menu-quest_log-reward_button = Recoger recompensa botón
 menu-quest_log-quest_brief = {$name} {$is_completed ->
     [0] {SIGNOFNUMBER($days_left) ->
       [positive] , {$days_left} {$days_left ->
-        [1] day
-        *[other] days
-      } left
+        [1] día
+        *[other] días
+      } restante
       *[other] {EMPTYSTRING()}
     }
-    *[1] completed!
+    *[1] completado!
   }
 menu-quest_log-quest_detail = {$name} {$is_completed ->
-    [0] , Description: {$description}, Objectives: {$objectives_list} {SIGNOFNUMBER($days_left) ->
+    [0] , Descripción: {$description}, Objetivos: {$objectives_list} {SIGNOFNUMBER($days_left) ->
       [positive] , {$days_left} {$days_left ->
-        [1] day
-        *[other] days
-      } left
+        [1] día
+        *[other] días
+      } restante
       *[other] {EMPTYSTRING()}
     }
-    *[1] completed! {$has_received_money ->
+    *[1] completado! {$has_received_money ->
       [0] {EMPTYSTRING()}
-      *[1] Collect {$received_money}g
+      *[1] Tomar {$received_money}g
     }
   }
 
 ### Special Orders Board Menu
 
-menu-special_orders_board-quest_details = {$name}, Description: {$description}, Objectives: {$objectives_list}{$is_timed ->
+menu-special_orders_board-quest_details = {$name}, Descripción: {$description}, Objetivos: {$objectives_list}{$is_timed ->
     [0] {EMPTYSTRING()}
-    *[1] , Time: {$days} {$days ->
-      [1] day
-      *[other] days
+    *[1] , Tiempo: {$days} {$days ->
+      [1] día
+      *[other] días
     }
   }{$has_money_reward ->
     [0] {EMPTYSTRING()}
-    *[1] , Reward: {$money}
+    *[1] , Recompensa: {$money}
   }
 menu-special_orders_board-accept_button = {$is_left_quest ->
-    [0] Right
-    *[1] Left
+    [0] Derecha
+    *[1] Izquierda
   } quest: {$quest_details}
-  Left click to accept this quest.
-menu-special_orders_board-quest_in_progress = In progress: {$quest_details}
-menu-special_orders_board-quest_completed = Quest {$name} completed! Open journal to collect your reward.
+  Click izquierdo para tomar este quest.
+menu-special_orders_board-quest_in_progress = En progreso: {$quest_details}
+menu-special_orders_board-quest_completed = Quest {$name} completado! Abre el diario para recoger tu recompensa.
 
 ## Title Menus
 
