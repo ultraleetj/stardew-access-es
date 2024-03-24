@@ -33,11 +33,11 @@ menu-character_creation-farm_type_buttons = {$is_selected ->
   } {$value}
 menu-character_creation-next_farm_type_page_button = Página siguiente de tipo de granja botón
 menu-character_creation-previous_farm_type_page_button = Página anterior de tipo de granja botón
-menu-character_creation-farm_type_locked_info = Reach level 10 {$farm_name} to unlock.
-menu-character_creation-skip_intro_button = {$is_enabled ->
+menu-character_creation-farm_type_locked_info = Alcanza el nivel 10 en {$farm_name} para desbloquear.
+menu-character_creation-skip_intro_button = Saltar introducción botón {$is_enabled ->
     [0] Desactivado
     *[1] Activado
-  } Saltar introducción botón
+  }
 menu-character_creation-advanced_options_button = Opciones avanzadas botón
 menu-character_creation-character_design_controls_usage_info = Presiona control izquierdo + espacio para mostrar u ocultar los controles de apariencia del personaje
 menu-character_creation-character_design_controls_toggle_info = Controles de apariencia del personaje {$is_enabled ->
@@ -61,8 +61,8 @@ menu-character_creation-increase_profit_margin_button = Aumentar margen de benef
 menu-character_creation-profit_margin_label = Margen de beneficio: {$value}
 menu-character_creation-decrease_profit_margin_button = Disminuir margen de beneficio botón
 menu-character_creation-money_style_separate_wallets_button = Dinero {$separate_wallets ->
-[0] compartido entre los granjeros
-*[1] independiente para cada granjero
+    [0] compartido entre los granjeros
+    *[1] independiente para cada granjero
   } botón
 
 
@@ -70,30 +70,30 @@ menu-character_creation-money_style_separate_wallets_button = Dinero {$separate_
 
 menu-character_creation-rotate_left_button = Girar a la izquierda botón
 menu-character_creation-rotate_right_button = Girar a la derecha botón
-menu-character_creation-eye_color_hue_slider = tono del color de los ojos Deslizador
-menu-character_creation-eye_color_saturation_slider = saturación del color de los ojos Deslizador
-menu-character_creation-eye_color_value_slider = valor del color de los ojos Deslizador
-menu-character_creation-hair_color_hue_slider = tono del color del cabello Deslizador
-menu-character_creation-hair_color_saturation_slider = saturación del color del cabello Deslizador
-menu-character_creation-hair_color_value_slider = valor del color del cabello Deslizador
-menu-character_creation-pants_color_hue_slider = tono del color de los pantalones Deslizador
-menu-character_creation-pants_color_saturation_slider = saturación del color de los pantalones Deslizador
-menu-character_creation-pants_color_value_slider = valor del color de los pantalones Deslizador
+menu-character_creation-eye_color_hue_slider = color de ojos Deslizador
+menu-character_creation-eye_color_saturation_slider = intensidad del color de ojos Deslizador
+menu-character_creation-eye_color_value_slider = tono del color de ojos Deslizador
+menu-character_creation-hair_color_hue_slider = color de pelo Deslizador
+menu-character_creation-hair_color_saturation_slider = intensidad del color de pelo Deslizador
+menu-character_creation-hair_color_value_slider = tono del color de pelo Deslizador
+menu-character_creation-pants_color_hue_slider = color de pantalones Deslizador
+menu-character_creation-pants_color_saturation_slider = intensidad del color de pantalones Deslizador
+menu-character_creation-pants_color_value_slider = tono del color de pantalones Deslizador
 
 menu-character_creation-previous_button_with_label = {$label} anterior botón
 menu-character_creation-next_button_with_label = {$label} siguiente botón
 menu-character_creation-label-skin = Tono de piel
-menu-character_creation-label-hair = Estilo de cabello
+menu-character_creation-label-hair = Tipo de pelo
 menu-character_creation-label-shirt = Camisa
-menu-character_creation-label-pants_style = Estilo de pantalones
+menu-character_creation-label-pants_style = Tipo de pantalones
 menu-character_creation-label-acc = Accesorio
 
 menu-character_creation-label-eye_color = Color de ojos
-menu-character_creation-label-hair_color = Color de cabello
+menu-character_creation-label-hair_color = Color de pelo
 menu-character_creation-label-pants_color = Color de pantalones
-menu-character_creation-label-hue = Tono
-menu-character_creation-label-saturation = Saturación
-menu-character_creation-label-value = Valor
+menu-character_creation-label-hue = Color
+menu-character_creation-label-saturation = Intensidad
+menu-character_creation-label-value = Tono
 
 ### Descriptions
 
@@ -104,7 +104,7 @@ menu-character_creation-description-cat = {$less_info ->
       [3] Gato amarillo con collar morado
       *[other] {EMPTYSTRING()}
     }
-    *[1] Cat {$breed}
+    *[1] Gato {$breed}
   }
 
 menu-character_creation-description-dog = {$less_info ->
@@ -114,7 +114,7 @@ menu-character_creation-description-dog = {$less_info ->
       [3] Terrier de pelo largo y oscuro y orejas marrones
       *[other] {EMPTYSTRING()}
     }
-    *[1] Dog {$breed}
+    *[1] Perro {$breed}
   }
 
 menu-character_creation-description-skin = {$less_info ->
@@ -143,9 +143,9 @@ menu-character_creation-description-skin = {$less_info ->
       [22] Gray
       [23] Pale, yellow undertone
       [24] Pale, ivory undertone
-      *[other] Undescribed skin tone {$index}
+      *[other] Tono de piel sin describir {$index}
     }
-    *[1] Skin: {$index}
+    *[1] Tono de piel: {$index}
   }
 
 menu-character_creation-description-hair = {$less_info ->
@@ -224,9 +224,9 @@ menu-character_creation-description-hair = {$less_info ->
       [116] Middle-part, teased, shoulder length
       [117] Middle-part with bangs, short
       [118] Left-side part with bangs, unkempt, short
-      *[other] Undescribed hair style {$index}
+      *[other] Tipo de pelo sin describir {$index}
     }
-    *[1] Hair: {$index}
+    *[1] Pelo: {$index}
   }
 
 menu-character_creation-description-shirt = {$less_info ->
@@ -343,20 +343,20 @@ menu-character_creation-description-shirt = {$less_info ->
       [1110] Purple button up, dark vertical stripe
       [1111] Brown button up, dark vertical stripe
       [1112] Olive green, dark vertical stripe
-      *[other] Undescribed shirt {$index}
+      *[other] Camisa sin describir {$index}
     }
-    *[1] Shirt: {$index}
+    *[1] Camisa: {$index}
   }
 
 menu-character_creation-description-pant = {$less_info ->
     [0] {$index ->
-      [1] Long
-      [2] Shorts
+      [1] Largos
+      [2] Cortos
       [3] Long Skirt
       [4] Skirt
       *[other] {EMPTYSTRING()}
     }
-    *[1] Pants Style: {$index}
+    *[1] Tipo de pantalones: {$index}
   }
 
 # For accessories
@@ -382,7 +382,7 @@ menu-character_creation-description-acc = {$less_info ->
       [18] Blue necklace
       [19] Gray sunglasses
       [20] Orange beak
-      *[other] Undescribed accessory {$index}
+      *[other] Accesorio sin describir {$index}
     }
-    *[1] Accessory: {$index}
+    *[1] Accesorio: {$index}
   }
