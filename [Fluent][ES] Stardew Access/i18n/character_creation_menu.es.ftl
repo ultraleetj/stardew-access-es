@@ -21,9 +21,7 @@ menu-character_creation-random_skin_button = Skin aleatorio botón
 menu-character_creation-gender_button = Género: {$is_male ->
     [0] Femenino
     *[1] Masculino
-  }
-  botón
-  {$is_selected ->
+  } botón {$is_selected ->
     [0] {EMPTYSTRING()}
     *[1] Seleccionado
   }
@@ -65,7 +63,6 @@ menu-character_creation-money_style_separate_wallets_button = Dinero {$separate_
     *[1] independiente para cada granjero
   } botón
 
-
 ## Character design controls
 
 menu-character_creation-rotate_left_button = Girar a la izquierda botón
@@ -102,7 +99,9 @@ menu-character_creation-description-cat = {$less_info ->
       [1] Gato naranja
       [2] Gato gris atigrado con vientre blanco
       [3] Gato amarillo con collar morado
-      *[other] {EMPTYSTRING()}
+      [4] Gato color crema
+      [5] Gato negro de ojos amarillos
+      *[other] Gato sin describir {$breed}
     }
     *[1] Gato {$breed}
   }
@@ -112,9 +111,20 @@ menu-character_creation-description-dog = {$less_info ->
       [1] Sabueso marrón dorado con collar azul
       [2] Perro Pastor marrón
       [3] Terrier de pelo largo y oscuro y orejas marrones
-      *[other] {EMPTYSTRING()}
+      [4] Perro pastor blanco y gris con pañuelo rojo
+      [5] Retriever marrón
+      *[other] Perro sin describir {$breed}
     }
     *[1] Perro {$breed}
+  }
+
+menu-character_creation-description-turtle = {$less_info ->
+    [0] {$breed ->
+      [1] Tortuga Verde
+      [2] Tortuga Morada
+      *[other] Tortuga sin describir {$breed}
+    }
+    *[1] Tortuga {$breed}
   }
 
 menu-character_creation-description-skin = {$less_info ->
@@ -382,6 +392,17 @@ menu-character_creation-description-acc = {$less_info ->
       [18] Blue necklace
       [19] Gray sunglasses
       [20] Orange beak
+      [21] Five o'clock shadow
+      [22] Bushy beard
+      [23] Pencil mustache
+      [24] Handlebar mustache
+      [25] Tanned face (includes head if bald)
+      [26] Red clown nose
+      [27] Square wire-framed glasses
+      [28] Prominent black eyebrows
+      [29] Blushing cheeks
+      [30] Pink lipstick
+      [31] Bronzer
       *[other] Accesorio sin describir {$index}
     }
     *[1] Accesorio: {$index}

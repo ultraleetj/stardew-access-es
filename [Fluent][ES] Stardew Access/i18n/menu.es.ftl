@@ -214,14 +214,28 @@ menu-exit_page-exit_to_desktop_button = Salir al escritorio botón
 menu-skills_page-player_info = {$name}, {$title}{$golden_walnut_count ->
     [0] {EMPTYSTRING()}
     [1] , 1 Nuez Dorada
-    *[other] , {$golden_walnut_count} Golden Walnuts
+    *[other] , {$golden_walnut_count} Nueces Doradas
   }{$qi_gem_count ->
     [0] {EMPTYSTRING()}
-    [1] , 1 Qi gema
-    *[other] , {$qi_gem_count} Qi gems
+    [1] , 1 Gema Qi
+    *[other] , {$qi_gem_count} Gemas Qi
   }
 menu-skills_page-skill_info = {$name} en nivel {$level},
   {$buffs}
+
+### Animal Page
+
+menu-animal_page-animal_info = {$name}, {$type}{$heart_count ->
+    [-1] {EMPTYSTRING()}
+    [1] , 1 corazón
+    *[other] , {$heart_count} corazones
+  }{$has_been_pet ->
+    [0] , no ha sido mascota aún
+    *[other] {EMPTYSTRING()}
+  }{$has_received_animal_cracker ->
+    [0] {EMPTYSTRING()}
+    *[other], galleta de animal recibida
+  }
 
 ## Menus With Inventory
 
@@ -285,6 +299,7 @@ menu-item_grab-chest_colors =
 
 menu-shop-buy_price_info = Precio de compra: {$price}g
 menu-shop-recipe_ingredients_info = Ingredientes: {$ingredients_list}
+menu-shop-pet_license-suffix = {$content} licencia
 
 ### Tailoring Menu
 
@@ -321,10 +336,13 @@ menu-animal_query-animal_info =
   }, {$age ->
     [1] 1 mes
     *[other] {$age} meses
-  } antiguo, {$parent_name ->
+  } antiguo{$parent_name ->
     [null] {EMPTYSTRING()}
     *[other] Dueño: {$parent_name}.
-  }, {$mood}
+  }, {$mood}{$has_received_animal_cracker ->
+    [0] {EMPTYSTRING()}
+    *[other], galleta de animal recibida
+  }
 menu-animal_query-confirm_selling_button = Confirmar venta del animal botón
 menu-animal_query-cancel_selling_button = Cancelar la venta del animal botón
 menu-animal_query-selling_button = Vender al precio de  {$price}g botón
@@ -334,15 +352,47 @@ menu-animal_query-allow_reproduction_button =
   {$checkbox_value ->
     [0] Desactivada
     *[1] Activada
-  } allow pregnancy button
+  } Permitir reproducción botón
+
+### Building Skin Menu
+
+# Cabin skins: [0 = default] [1 = plank] [2 = log] [3 = neighbour] [4 = rustic] [5 = beach] [6 = trailer]
+# Pet bowl skins: [0 = default] [1 = stone] [2 = hay]
+
+menu-building_skin-skin_info = {$type ->
+    [cabin] {$index ->
+        [0] Cabaña predeterminada
+        [1] {$id}
+        [2] {$id}
+        [3] {$id}
+        [4] {$id}
+        [5] {$id}
+        [6] {$id}
+        *[other] Skin de cabaña desconocido, id:{$id}, index:{$index}
+      }
+    [pet_bowl] {$index ->
+        [0] Cuenco de mascota predeterminado
+        [1] {$id}
+        [2] {$id}
+        *[other] Skin de cuenco de mascota desconocido, id:{$id}, index:{$index}
+      }
+    *[other] {$index}: {$id}
+  }
+menu-building_skin-next_skin_button = Siguiente Skin
+menu-building_skin-previous_skin_button = Skin anterior
 
 ### Carpenter Menu
 
-menu-carpenter-blueprint_info = {$name}, Precio: {$price}g, Ingredientes: {$ingredients_list}, Dimensiones: {$width} ancho and {$height} alto, Descripción: {$description}
+menu-carpenter-blueprint_info = {$name}, Precio: {$price} oro, Ingredientes: {$ingredients_list}, {$days ->
+    [0] Se cosntruye al instante
+    [1] 1 día para construir
+    *[other] {$days} días para construir
+  }, Dimensiones: {$width} ancho y {$height} halto, Descripción: {$description}
 menu-carpenter-previous_blueprint_button = Plano anterior
 menu-carpenter-next_blueprint_button = Plano siguiente
 menu-carpenter-move_building_button = Desplazar edificio
 menu-carpenter-paint_building_button = Pintar edificio
+menu-carpenter-appearance_button = Cambiar apariencia
 menu-carpenter-demolish_building_button = Demoler edificio{$can_demolish ->
     [0] , no puedes demoler este edificio
     *[1] {EMPTYSTRING()}
@@ -354,9 +404,9 @@ menu-carpenter-construct_building_button = Construir edificio{$can_construct ->
 
 ### Choose From List Menu
 
-menu-choose_from_list-ok_button = Selecciona {$option} botón
+menu-choose_from_list-ok_button = Seleccionar {$option} botón
 menu-choose_from_list-previous_button = Opción anterior: {$option} botón
-menu-choose_from_list-next_button = Siguiente opción: {$option} botón
+menu-choose_from_list-next_button = Opción siguiente: {$option} botón
 
 ### Confirmation Dialogue Menu
 
@@ -364,7 +414,7 @@ menu-choose_from_list-next_button = Siguiente opción: {$option} botón
 # menu-confirmation_dialogue-ok_button = {$dialogue_message}
 #   {I18N("common-ui-ok_button", mod:"shoaib.stardewaccess")}
 menu-confirmation_dialogue-ok_button = {$dialogue_message}
-  Ok botón
+  Aceptar botón
 menu-confirmation_dialogue-cancel_button = {$dialogue_message}
   Cancelar Botón
 menu-confirmation_dialogue-copy_button = {$dialogue_message}
@@ -375,14 +425,14 @@ menu-confirmation_dialogue-copy_button = {$dialogue_message}
 menu-item_list-ok_button = {$title}
   {$item_list}
   Página {$current_page} de {$total_pages}
-  Ok botón
+  Aceptar botón
 
 ### Letter Viewer Menu
 
 menu-letter_viewer-letter_message = {$message_content}{$is_money_included ->
     [0] {EMPTYSTRING()}
     *[1] 
-      Obtuviste {$received_money}g
+      Obtuviste {$received_money} oro
   }{$learned_any_recipe ->
     [0] {EMPTYSTRING()}
     *[1] 

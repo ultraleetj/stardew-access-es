@@ -92,6 +92,7 @@ building_operations-building_failed = Construcción fallida.
 prefix-repair = Reparar {$content}
 
 suffix-building_door = {$content} Puerta
+suffix-map_entrance = {$content} Entrada
 suffix-mill_input = {$content} Enrada
 suffix-mill_output = {$content} Salida
 
@@ -110,10 +111,19 @@ tile-resource_clump-mine_rock-name = Roca de mina
 tile-resource_clump-giant_cauliflower-name = Coliflor gigante
 tile-resource_clump-giant_melon-name = Melón gigante
 tile-resource_clump-giant_pumpkin-name = Calabaza gigante
+tile-resource_clump-unknown = Grupo de recursos desconocido {$id}
 tile-water-name = Agua
 tile-cooled_lava-name = Lava enfriada
 tile-lava-name = Lava
-tile-grass-name = Hierba
+tile-grass-name = {$grass_type ->
+    *[1] Hierba
+    [2] Hierba de cueva
+    [3] Hierba congelada
+    [4] Hierba de lava
+    [5] Hierba de cueva
+    [6] Telaraña
+    [7] Hierba Azul
+  }
 tile-sprinkler-pressure_nozzle-prefix = Presurizado {$content}
 tile-sprinkler-enricher-prefix = Enriqueciendo {$content}
 tile-fence_gate-suffix = {$name} {$is_open ->
@@ -222,7 +232,9 @@ item-stamina_and_health_recovery_on_consumption = {SIGNOFNUMBER($stamina_amount)
   }
 item-required_item_info = Requiere {$name}
 item-sell_price_info = Precio de venta: {$price} oro
+# In some cases we can't get the count of the dropped items and it is returned `0`
 item-dropped_item-info = Objeto soltado: {$item_count ->
+    [0] {$item_name}
     [1] 1 {$item_name}
     *[other] {$item_count} {$item_name}s
   }
@@ -324,6 +336,8 @@ terrain_util-bush_type = {$type ->
 terrain_util-bush = Arbusto
 terrain_util-bush-town = Ciudad
 terrain_util-bush-greenhouse = Invernadero
+terrain_util-tent = Tienda de campaña
+terrain_util-tent_entrance = Entrada de la tienda de campaña
 terrain_util-crop-watered = Regado
 terrain_util-crop-unwatered = Sin regar
 terrain_util-crop-dead = Muerto
@@ -355,10 +369,12 @@ object_category-machine = Máquina
 object_category-mine_item = Objeto de la mina
 object_category-npc = NPC
 object_category-pending = Pendiente
+object_category-quest_items = Objetos de misiones
 object_category-ready = Listo
-object_category-resource_clump = Grupo de recursos
-object_category-tree = Árbol
+object_category-resource_clumps = Grupos de recursos
+object_category-trees = Árboles
 object_category-water = Agua
+object_category-unknown = Desconocido
 object_category-other = Otro
 
 direction-north = Norte

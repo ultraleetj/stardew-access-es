@@ -226,6 +226,7 @@ static_tile-island_field_office-island_survey = Encuesta De Las Islas
 
 static_tile-island_north-dig_site_parrot_express = Expreso De Loros Al Sitio De Excavación
 static_tile-island_north-volcano_parrot_express = Expreso De Loros Al Volcán
+static_tile-island_north-volcano_entrance = Entrada Al Volcán
 
 ## Island Shrine
 
@@ -263,6 +264,13 @@ static_tile-island_west_cave_1-crystal_2 = Cristal 2
 static_tile-island_west_cave_1-crystal_3 = Cristal 3
 static_tile-island_west_cave_1-crystal_4 = Cristal 4
 static_tile-island_west_cave_1-crystal_5 = Cristal 5
+
+## Volcano
+
+static_tile-volcanodungeon0-island_north_entrance_east = Entrada norte a la isla (este)
+static_tile-volcanodungeon0-island_north_entrance_west = Entrada norte a la isla (oeste)
+static_tile-volcanodungeon5-dwarf_shop = Tienda Pequeña
+
 
 # Joja Mart
 
@@ -393,6 +401,8 @@ static_tile-mermaid_house-clam_shell_5 = Caparazón De Almeja 5
 
 # Mine
 
+static_tile-mine-mountain_entrance_east = Entrada A La Montaña (Este)
+static_tile-mine-mountain_entrance_west = Entrada A La Montaña (Oeste)
 static_tile-mine-quarry_mine_ladder = Escalera De La Mina
 static_tile-mine-icy_pool = Piscina Helada
 static_tile-mine-lava_pool = Piscina De Lava
@@ -401,6 +411,7 @@ static_tile-mine-lava_pool = Piscina De Lava
 
 static_tile-mountain-mine_bridge = Puente De La Mina
 static_tile-mountain-quarry_bridge = Puente De La Cantera
+static_tile-mountain-quarry_mine_entrance = Entrada A La Mina De La Cantera
 static_tile-mountain-bridge_1 = Puente 1
 static_tile-mountain-bridge_2 = Puente 2
 static_tile-mountain-mountain_warp_statue = Estatua De Transportación A La Montaña
@@ -562,5 +573,4 @@ static_tile-wizard_house_basement-shrine_of_illusions = Santuario De Las Ilusion
 
 static_tile-tunnel-safe = Seguro
 static_tile-undergroundmine77377-grim_reaper_statue = Estatua De La Muerte
-static_tile-volcanodungeon5-dwarf_shop = Tienda Pequeña
 static_tile-woods-old_master_cannoli = El Antiguo Maestro Cannoli
