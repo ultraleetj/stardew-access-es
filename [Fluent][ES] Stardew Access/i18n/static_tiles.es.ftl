@@ -37,7 +37,7 @@ static_tile-npc-camel = Camello
 
 ## Island Farm Cave
 
-static_tile-npc-gourmand_frog = Rana Encantadora
+static_tile-npc-gourmand_frog = Rana Glotona
 
 ## Movie Theater
 
