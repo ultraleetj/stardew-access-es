@@ -390,6 +390,7 @@ static_tile-manor_house-lost_and_found_box = Caja De Objetos Perdidos Y Encontra
 static_tile-manor_house-mayors_room_door = Sala Del Alcalde
 static_tile-manor_house-mayors_oven = El Horno Del Alcalde
 static_tile-manor_house-mayors_fridge = Refrigerador Del Alcalde
+static_tile-manor_house-prize_ticket_machine = Máquina De Tickets De Premio
 
 # Mermaid House
 
@@ -416,6 +417,7 @@ static_tile-mountain-bridge_1 = Puente 1
 static_tile-mountain-bridge_2 = Puente 2
 static_tile-mountain-mountain_warp_statue = Estatua De Transportación A La Montaña
 static_tile-mountain-science_house_secondary_door = Casa De Ciencias Secundaria
+static_tile-mountain-linus_campfire = Fogata De Linus
 
 # Movie Theater
 

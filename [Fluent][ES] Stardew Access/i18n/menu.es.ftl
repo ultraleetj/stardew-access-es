@@ -484,6 +484,14 @@ menu-pond_query-change_netting_button = Cambiar red botón
 menu-pond_query-empty_pond_button = Estanque EMPTYSTRING botón
 menu-pond_query-pond_info = {$pond_name}, {$population_info}, {$required_item_info}, Estado: {$status}
 
+### Prize Ticket Menu
+
+menu-prize_ticket-collect_prize_button = Premios actuales: {$prize_items}
+  Tienes {$prize_ticket_count ->
+    [1] 1 ticket de premio
+    *[other] {$prize_ticket_count} tickets de premio
+  }, Recoger premio botón
+
 ### Purchase Animal Menu
 
 menu-purchase_animal-animal_info = {$name}, Precio: {$price}g, Descripción: {$description}
