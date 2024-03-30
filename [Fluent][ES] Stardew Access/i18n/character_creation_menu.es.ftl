@@ -59,8 +59,8 @@ menu-character_creation-increase_profit_margin_button = Aumentar margen de benef
 menu-character_creation-profit_margin_label = Margen de beneficio: {$value}
 menu-character_creation-decrease_profit_margin_button = Disminuir margen de beneficio botón
 menu-character_creation-money_style_separate_wallets_button = Dinero {$separate_wallets ->
-    [0] compartido entre los granjeros
-    *[1] independiente para cada granjero
+    [0] independiente para cada granjero
+    *[1] compartido entre los granjeros
   } botón
 
 ## Character design controls
@@ -129,30 +129,30 @@ menu-character_creation-description-turtle = {$less_info ->
 
 menu-character_creation-description-skin = {$less_info ->
     [0] {$index ->
-      [1] Pale, beige undertone
-      [2] Tan, pink undertone
-      [3] Pale, pink undertone
-      [4] Pale
-      [5] Brown, red undertone
-      [6] Brown, pink undertone
-      [7] Brown, warm tone
-      [8] Beige, orange undertone
-      [9] Light Brown
-      [10] Pale, pink overtone
-      [11] Pale, grey undertone
-      [12] Tan, warm tone
-      [13] Pale Green
-      [14] Pale Fuchsia
-      [15] Brown, full tone
-      [16] Tan, red overtone
-      [17] Pale Blue
-      [18] Green
-      [19] Pale Red
-      [20] Pale Purple
-      [21] Yellow, full tone
-      [22] Gray
-      [23] Pale, yellow undertone
-      [24] Pale, ivory undertone
+      [1] Pálido con matices beis
+      [2] Bronceado con matices rosados
+      [3] Pálido con matices rosados
+      [4] Pálido
+      [5] Marrón con matices rojizos
+      [6] Marrón con matices rosados
+      [7] Marrón Cálido
+      [8] Beis con matices anaranjados
+      [9] Marrón Claro
+      [10] Rosado con matices pálidos
+      [11] Pálido con matices grisáceos
+      [12] Bronceado cálido
+      [13] Verde pálido
+      [14] Fucsia pálido
+      [15] Marrón
+      [16] Rojo con matices bronceados
+      [17] Azul pálido
+      [18] Verde
+      [19] Rojo pálido
+      [20] Morado pálido
+      [21] Amarillo
+      [22] Gris
+      [23] Pálido con matices amarillos
+      [24] Pálido con matices marfil
       *[other] Tono de piel sin describir {$index}
     }
     *[1] Tono de piel: {$index}
@@ -241,17 +241,17 @@ menu-character_creation-description-hair = {$less_info ->
 
 menu-character_creation-description-shirt = {$less_info ->
     [0] {$index ->
-      [1001] Red, denim overalls
-      [1002] Brown button up
-      [1003] Light Green, brown belt
-      [1004] Black, gray splat design
-      [1005] Black skull design
-      [1006] Blue Gray, cloud design
-      [1007] Cream, light blue horizontal stripe
-      [1008] Green, denim overalls
-      [1009] Yellow, brown horizontal zig zag
-      [1010] Blue Green, cloud design
-      [1011] Black, white letter A
+      [1001] Mono rojo de mezclilla
+      [1002] Camisa marrón
+      [1003] Verde claro, cinturón marrón
+      [1004] Negra, diseño de manchas grises
+      [1005] Diseño de calavera negra
+      [1006] Azul grisáceo con diseño de nubes
+      [1007] Color crema con franjas horizontales azul claro
+      [1008] Mono verde de mezclilla
+      [1009] Amarillo y marrón en zig zag horizontal
+      [1010] Verde azulado con diseño de nubes
+      [1011] Negra, con una letra A blanca
       [1012] Green, collar cinches
       [1013] Lime Green, green stripes
       [1014] Red, white horizontal stripes
