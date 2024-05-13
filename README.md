@@ -22,9 +22,9 @@ Puedes tener una pluralización básica configurada con Fluent, pero eso se comp
    * Ve al inicio de esta página web, busca y selecciona el botón code, o código, que desplegará un submenú.
    * selecciona download zip, o descargar archivo zip
    * De forma alternativa, puedes [usar este enlace para descargar la traducción más reciente directamente desde este repositorio](https://github.com/Marc2p/stardew-access-es/archive/refs/heads/main.zip)
-   * Ahora que descargaste el zip, extrae la carpeta llamada "[Fluent][ES] Stardew Access" que está dentro del archivo y pégala en la carpeta de mods de stardew valley, por defecto en windows usando steam: "C:\Program Files (x86)\Steam\steamapps\common\Stardew Valley\mods"
-   * para verificar que se ha cargado el idioma nuevo con éxito, ejecuta stardew desde smapi y debería haber un mensaje en la consola que dice "[Project Fluent] Loading content pack `marc2p.fluent.stardewaccess.es`..."
-   * de todos modos, debería anunciarse también en español la carga de stardew access junto con su número de versión, y listo, esto sería todo.
+2.  Ahora que descargaste el zip, extrae la carpeta llamada "[Fluent][ES] Stardew Access" que está dentro del archivo y pégala en la carpeta de mods de stardew valley, por defecto en windows usando steam: "C:\Program Files (x86)\Steam\steamapps\common\Stardew Valley\mods"
+   3. para verificar que se ha cargado el idioma nuevo con éxito, ejecuta stardew desde smapi y debería haber un mensaje en la consola que dice "[Project Fluent] Loading content pack `marc2p.fluent.stardewaccess.es`..."
+   4. de todos modos, debería anunciarse también en español la carga de stardew access junto con su número de versión, y listo, esto sería todo.
 
 ## Configuración del paquete de contenido de Fluent
 
