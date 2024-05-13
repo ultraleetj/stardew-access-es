@@ -18,23 +18,23 @@ commands-read_tile-flooring_toggle = Lectura de tipos de suelo is {$is_enabled -
 commands-tile_marking-build_list-building_info = valores {$index}: {$name} at {$x_position}x and {$y_position}y
 commands-tile_marking-build_list-buildings_list = Construcciones disponibles:
   {$building_infos}
-  Open command menu and use pageup and pagedown to check the list
+  Abre el menú de comandos y usa avance página y retroceso página para revisar la lista
 commands-tile_marking-build_list-no_building = No hay edificios existentes para listar
 
-commands-tile_marking-mark-location_marked = Ubicación {$x_position}x {$y_position}y added at {$index} index.
+commands-tile_marking-mark-location_marked = Ubicación {$x_position}x {$y_position}y agregada en {$index} index.
 commands-tile_marking-mark-not_in_farm = Solo puedes utilizar este comando en la granja
 commands-tile_marking-mark-index_not_entered = También debes ingresar las coordenadas!
 commands-tile_marking-mark-wrong_index = Este valor solo puede contener números únicamente del 0 al 9
 
-commands-tile_marking-mark_list-mark_info = Valores {$index}: {$x_position}x and {$y_position}y
+commands-tile_marking-mark_list-mark_info = Valores {$index}: {$x_position}x y, {$y_position}y
 commands-tile_marking-mark_list-marks_list = Posiciones establecidas:
   {$mark_infos}
-  Open command menu and use pageup and pagedown to check the list
+  Abre el menú de comandos y usa avance página y retroceso página para revisar la lista
 commands-tile_marking-mark_list-not_marked = No hay posiciones establecidas!
 
 commands-tile_marking-build_sel-cannot_select = No se puede seleccionar esta construcción.
 commands-tile_marking-build_sel-building_index_not_entered= Introduce el valor de la construcción! Utiliza la lista de edificios.
-commands-tile_marking-build_sel-marked_index_not_entered = Introduce el valor del lugar señalizado también! Use marklist.
+commands-tile_marking-build_sel-marked_index_not_entered = Introduce el valor del lugar señalizado también! Usa comando marklist.
 commands-tile_marking-build_sel-wrong_index = Este valor solo puede ser un número.
 commands-tile_marking-build_sel-no_building_found = No se encontró ningún edificio con este valor {$index}. Usa la lista de edificios.
 commands-tile_marking-build_sel-no_marked_position_found = Ninguna posición establecida en {$index} index.
