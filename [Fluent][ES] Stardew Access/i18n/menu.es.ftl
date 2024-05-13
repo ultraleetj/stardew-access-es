@@ -176,7 +176,7 @@ menu-social_page-npc_info = {$name}{$has_talked ->
   }, {$gifts_this_week} {$gifts_this_week ->
     [1] regalo
     *[other] regalos
-  } given this week.
+  } Dados esta semana.
 
 menu-social_page-player_info = {$name}{$relationship_status ->
     [null] {EMPTYSTRING()}
